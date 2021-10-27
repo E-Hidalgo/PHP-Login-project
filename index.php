@@ -15,10 +15,10 @@
     <img src="assets/pineapple-fruit-tropical-fresh-116667.png" width="100" alt="logo_pineapple">
     <div class="form">
       <form action="" class="form__content">
-        <label for="user" class="form__label">User Name</label>
-        <input type="text" class="form__input">
+        <label for="email" class="form__label">User Name</label>
+        <input type="email" id="email" name="email" class="form__input">
         <label for="password" class="form__label">Password</label>
-        <input type="password" class="form__input">
+        <input type="password" id="password" name="password" class="form__input">
         <button type="submit" class="form__button">Log In</button>
       </form>
     </div>
