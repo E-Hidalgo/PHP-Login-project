@@ -9,58 +9,60 @@ main {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+main img {
+  margin-bottom: 1rem;
+}
 
 .form {
-  background-color: rgba(0, 0, 0, 0.187);
-  display: flex;
-  flex-direction: column;
-  border: 1px solid black;
+  background-color: rgba(19, 77, 42, 0.31);
+  border: 1px solid greenyellow;
   border-radius: 5px;
   width: 300px;
   height: 300px;
   padding: 1rem;
-  justify-content: center;
-  align-items: center;
 }
-
 .form__content {
-  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
   padding: 0;
 }
-
 .form__label {
   font-size: 20px;
   margin: 0.625rem;
   color: greenyellow;
 }
-
-.form__label:focus {
-  outline: none;
-}
-
 .form__input {
+  background-color: transparent;
+  color: greenyellow;
+  font-size: 1.1rem;
   width: 90%;
   padding: 0.5rem;
-  margin: 0.625rem 0;
+  margin: 0.625rem 0 1rem 0;
+  border: none;
+  border-bottom: 1px solid greenyellow;
+}
+.form__input:focus {
   outline: none;
 }
-
 .form__button {
-  margin: 0;
+  margin: 0.8rem;
   outline: none;
   border: none;
   border-radius: 5px;
   background-color: green;
-  width: 100%;
+  font-size: 1.2rem;
+  width: 90%;
   height: 2.25rem;
-  transition: 0.5s ease-in;
+  transition: 0.2s ease-in;
+  color: greenyellow;
 }
-
 .form__button:hover {
   background-color: greenyellow;
-}
-
-/*# sourceMappingURL=index.css.map */
+  color: black;
+}/*# sourceMappingURL=index.css.map */

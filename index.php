@@ -12,6 +12,7 @@
 <body>
 
   <main>
+    <img src="assets/pineapple-fruit-tropical-fresh-116667.png" width="100" alt="logo_pineapple">
     <div class="form">
       <form action="" class="form__content">
         <label for="user" class="form__label">User Name</label>
