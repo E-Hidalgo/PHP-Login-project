@@ -25,24 +25,29 @@ main {
   justify-content: center;
   align-items: center;
 }
+
 .form__content {
   margin: 2rem;
   padding: 0;
 }
+
 .form__label {
   font-size: 20px;
   margin: 0.625rem;
   color: greenyellow;
 }
+
 .form__label:focus {
   outline: none;
 }
+
 .form__input {
   width: 90%;
   padding: 0.5rem;
   margin: 0.625rem 0;
   outline: none;
 }
+
 .form__button {
   margin: 0;
   outline: none;
@@ -53,6 +58,9 @@ main {
   height: 2.25rem;
   transition: 0.5s ease-in;
 }
+
 .form__button:hover {
   background-color: greenyellow;
-}/*# sourceMappingURL=index.css.map */
+}
+
+/*# sourceMappingURL=index.css.map */
