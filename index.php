@@ -14,7 +14,7 @@
   <main>
     <img src="assets/pineapple-fruit-tropical-fresh-116667.png" width="100" alt="logo_pineapple">
     <div class="form">
-      <form action="" class="form__content">
+      <form method="POST" action="./modules/validate.php" class="form__content">
         <label for="email" class="form__label">User Name</label>
         <input type="email" id="email" name="email" class="form__input">
         <label for="password" class="form__label">Password</label>
