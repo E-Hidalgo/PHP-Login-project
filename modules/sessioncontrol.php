@@ -15,6 +15,11 @@ $passworddb = "Kike123456";
 
 if($passworddb === $password && $emaildb === $email)
 {
+  $_SESSION["email"]= $email;
   header("Location: ../panel.php");
+}
+else
+{
+  header("Location: ../index.php");
 }
 }

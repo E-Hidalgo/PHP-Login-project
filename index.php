@@ -12,7 +12,7 @@
 <body>
 
   <main>
-    <img src="assets/pineapple-fruit-tropical-fresh-116667.png" width="100" alt="logo_pineapple">
+    <img src="assets/unnamed.png" width="150" alt="logo_pineapple">
     <div class="form">
       <form method="POST" action="./modules/validate.php" class="form__content">
         <label for="email" class="form__label">User Name</label>
