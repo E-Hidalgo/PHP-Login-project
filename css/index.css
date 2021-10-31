@@ -100,8 +100,8 @@ main img {
   background-color: rgba(19, 77, 42, 0.31);
   border: 1px solid rgba(255, 255, 255, 0.411);
   border-radius: 5px;
-  width: 300px;
-  height: 350px;
+  width: 18.75rem;
+  height: 25rem;
   padding: 1rem;
 }
 .form__content {
@@ -122,7 +122,7 @@ main img {
   font-size: 1.1rem;
   width: 90%;
   padding: 0.5rem;
-  margin: 0.625rem 0 1rem 0;
+  margin: 0.3rem 0 1rem 0;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.411);
 }

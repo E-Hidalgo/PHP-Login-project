@@ -1,5 +1,8 @@
 <?php
+require_once("./modules/sessioncontrol.php");
+
 $isLogout = $_GET["logout"];
+$alert =checkSession();
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +26,9 @@ $isLogout = $_GET["logout"];
         <input type="email" id="email" name="email" class="form__input">
         <label for="password" class="form__label">Password</label>
         <input type="password" id="password" name="password" class="form__input">
-        <div class="form__info-message"><?= ((isset($isLogout)) && $isLogout? "Logout correcto" : "")?></div>
+
+        <?= ($alert) ? "<div class='alert alert-$alert[type] role='alert'>$alert[text]</div>" : "" ?>
+
         <button type="submit" class="form__button">Log In</button>
       </form>
     </div>
