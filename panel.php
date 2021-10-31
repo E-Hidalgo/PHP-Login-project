@@ -1,11 +1,10 @@
 <?php
-session_start();
+require_once("./modules/sessioncontrol.php");
+checkSession();
 
 $email = $_SESSION["email"];
-
 $cutEmail = explode("@", $email);
-
-$user= $cutEmail[0]
+$user= $cutEmail[0];
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +31,7 @@ $user= $cutEmail[0]
       </ul>
       <div class="flex-row centered">
         <?= $email?>
-        <button class="header__logout">Log Out</button>
+        <a class="header__logout" href="./modules/close_session.php">Log Out</a>
       </div>
     </nav>
   </header>
@@ -41,17 +40,18 @@ $user= $cutEmail[0]
 
     <aside>
       <ul class="coins">
-        <li>Bitcoin</li>
-        <li>Ethereum</li>
-        <li>Cardano</li>
-        <li>XRP</li>
-        <li>Dogecoin</li>
-        <li>Shiba Inu</li>
-        <li>Algorand</li>
-        <li>Solana</li>
-        <li>Whatever</li>
+        <li><img src="assets/1200px-BTC_Logo.svg.png" width="30" alt="bitcoin" />Bitcoin</li>
+        <li><img src="assets/1200px-Ethereum-icon-purple.svg.png" width="30" alt="ethereum" />Ethereum</li>
+        <li><img src="assets/cardano-logo.webp" width="30" alt="cardano" />Cardano</li>
+        <li><img src="assets/xrp-icon-freelogovectors.net_.png" width="30" alt="XRP" />XRP</li>
+        <li><img src="assets/1200px-Ethereum-icon-purple.svg.png" width="30" alt="ethereum" />Dogecoin</li>
+        <li><img src="assets/1200px-Ethereum-icon-purple.svg.png" width="30" alt="ethereum" />Shiba Inu</li>
+        <li><img src="assets/1200px-Ethereum-icon-purple.svg.png" width="30" alt="ethereum" />Algorand</li>
+        <li><img src="assets/1200px-Ethereum-icon-purple.svg.png" width="30" alt="ethereum" />Solana</li>
+        <li><img src="assets/1200px-Ethereum-icon-purple.svg.png" width="30" alt="ethereum" />Whatever</li>
       </ul>
     </aside>
+
   </div>
 
 </body>

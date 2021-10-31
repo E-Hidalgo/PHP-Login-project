@@ -1,15 +1,26 @@
 <?php
 
+function checkSession()
+{
+  session_start();
+
+  if(!isset($_SESSION["email"])) 
+  {
+    header("Location: ./index.php");
+  }
+
+ 
+}
+
 function validate()
 {
   session_start();
 
   $email = $_POST["email"];
   $password = $_POST["password"];
-  
+
   echo $email . $password;
 
-    
 $emaildb = "kikekoko@assembler.com";
 $passworddb = "Kike123456";
 

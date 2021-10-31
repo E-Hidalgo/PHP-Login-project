@@ -1,3 +1,7 @@
+<?php
+$isLogout = $_GET["logout"];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,6 +23,7 @@
         <input type="email" id="email" name="email" class="form__input">
         <label for="password" class="form__label">Password</label>
         <input type="password" id="password" name="password" class="form__input">
+        <div class="form__info-message"><?= ((isset($isLogout)) && $isLogout? "Logout correcto" : "")?></div>
         <button type="submit" class="form__button">Log In</button>
       </form>
     </div>

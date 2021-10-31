@@ -33,12 +33,18 @@ body {
   transform: scale(1.1);
 }
 .header__logout {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #0653FE;
   width: 200px;
   height: 50px;
   font-size: 1.2rem;
   border: none;
   border-radius: 5px;
+  padding: 0;
   margin: 0 1rem;
   transition: 0.3s ease-in;
   cursor: pointer;
@@ -56,13 +62,25 @@ body {
   margin: 2rem;
 }
 
+.coins {
+  max-height: 50px;
+  font-size: 1.2rem;
+}
 .coins li {
+  display: flex;
+  align-items: center;
   list-style: none;
   width: 12.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.411);
+  border: 1px solid rgba(255, 255, 255, 0.226);
   padding: 1rem;
   margin: 0.5rem;
   border-radius: 5px;
+}
+.coins li:hover {
+  background-color: rgba(255, 255, 255, 0.411);
+}
+.coins img {
+  margin-right: 0.8rem;
 }
 
 main {
